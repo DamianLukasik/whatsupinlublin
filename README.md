@@ -10,6 +10,7 @@ This recruitment task was to write module shows the current weather in Lublin
 - crontab
 
 The tile shows the current weather in Lublin
+
 /whatsupinlublin/index/display
 
 The tile shows informations about:
@@ -27,5 +28,6 @@ The tile shows informations about:
 - sunset
 
 The grid in admin panel shows all samples of weather in Lublin
+
 /admin/damianlukasik_whatsupinlublin/sample/index/key/2ec20344dcc4ae772151042e00a34ceb2ec181e194099e602eb059fd48253f06/
 
