@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Damianlukasik_Whatsupinlublin::whatsupinlublin" title="What's up in Lublin?" module="Damianlukasik_Whatsupinlublin" sortOrder="51" resource="Damianlukasik_Whatsupinlublin::whatsupinlublin"/>
+        <add id="Damianlukasik_Whatsupinlublin::sample" title="Show samples" module="Damianlukasik_Whatsupinlublin" sortOrder="10" action="damianlukasik_whatsupinlublin/sample" resource="Damianlukasik_Whatsupinlublin::sample" parent="Damianlukasik_Whatsupinlublin::whatsupinlublin"/>
+    </menu>
+</config>

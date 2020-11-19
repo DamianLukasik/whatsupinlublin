@@ -1,0 +1,40 @@
+<style>
+.tileWeather{width:45%;background:#00BFFF;color:ghostwhite;margin:auto;padding:15px;}
+h2{margin:5px;font-size:34px;display:contents;}
+.tileWeather img {height:35px;}
+h3{margin-top:1rem;margin-bottom:0.5rem;width:22rem;display:inline-grid;}
+</style>
+<div class="tileWeather">
+<?php
+    /**
+     * @var \Damianlukasik\Whatsupinlublin\Block\Display $block
+     */    
+    echo '<h2>'.$block->city().'</h2>';
+    $collection = $block->getLatestSample();
+
+    echo '<img src="http://openweathermap.org/img/wn/'.
+    $collection->getIcon().'@2x.png"/>'.$collection->getWeather().'<br>';
+
+    echo '<h3>Temp: '.round(($collection->getTemp()-(273.15)),2).' °C</h3>';
+    echo '<h3>Feels like: '.round(($collection->getFeelsLike()-(273.15)),2).' °C</h3><br>';
+
+    echo '<h3>Temp Min: '.round(($collection->getTempMin()-(273.15)),2).' °C</h3>';
+    echo '<h3>Temp Max: '.round(($collection->getTempMax()-(273.15)),2).' °C</h3><br>';
+
+    echo '<h3>Pressure: '.($collection->getPressure()).' hPa</h3>';
+    echo '<h3>Himidity: '.($collection->getHumidity()).' %</h3><br>';
+
+    echo "<style>.rotate {font-size:x-large;display:inline-table;height:0px;width:0px;transform:rotate(-".$collection->getWindDeg()."deg);}</style>";
+
+    echo '<h3>Visibility: '.($collection->getVisibility()).'m</h3>';
+    echo '<h3>Wind speed: '.($collection->getWindSpeed()*(3.6)).'km/h</h3>';
+    echo "<div class=\"rotate\">⇓</div><br>";
+
+    echo '<h3>Clouds: '.($collection->getClouds()*(3.6)).'%</h3><br>';
+    echo '<h3>Sunrise: '.date("H:i:s", $collection->getSunrise()).'</h3>';
+    echo '<h3>Sunset: '.date("H:i:s", $collection->getSunset()).'</h3>';
+?>
+</div>
+
+</body>
+</html>
