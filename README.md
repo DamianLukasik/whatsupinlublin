@@ -4,9 +4,10 @@ This recruitment task was to write module shows the current weather in Lublin
 ## The module consists of
 - module's installation files
 - model with a DB table
-- creating a controller
-- creating a view
-- creating a grid in the administration panel
+- controller
+- view
+- grid in the administration panel
+- crontab
 
 The tile shows the current weather in Lublin
 /whatsupinlublin/index/display
