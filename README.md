@@ -29,6 +29,6 @@ The tile shows informations about:
 
 The grid in admin panel shows all samples of weather in Lublin
 
-/admin/damianlukasik_whatsupinlublin/sample/index/key/2ec20344dcc4ae772151042e00a34ceb2ec181e194099e602eb059fd48253f06/
+/admin/damianlukasik_whatsupinlublin/sample/index
 
 The entire task was completed in less than 8 hours
